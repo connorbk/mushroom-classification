@@ -2,6 +2,10 @@
 
 **CBS Copenhagen Business School — Machine Learning and Deep Learning, Spring 2026**
 
+Four models of increasing complexity identify 19 Danish mushroom species from ~9,200 iNaturalist field photos. Accuracy climbs from **30.6%** (logistic regression) to **92.3%** (fine-tuned EfficientNet-B0), but the most accurate model is also the most confidently wrong on the species that can poison you.
+
+![End-to-end pipeline](results/pipeline_figure.png)
+
 ## Research Question
 
 *How does model complexity affect the classification of mushroom species from field photographs?*
@@ -24,6 +28,8 @@
 | Main Model 2 | Random Forest (PCA features) | 29.2% |
 | Main Model 3 | Custom CNN (4 variants, trained from scratch) | 59.1% |
 | Benchmark Baseline | EfficientNet-B0 (pretrained, fine-tuned) | 92.3% |
+
+![Custom CNN architecture](results/custom_cnn_architecture.png)
 
 ## Key Findings
 
